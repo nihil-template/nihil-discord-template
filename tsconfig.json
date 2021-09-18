@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es2015",
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "declaration": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@/Client/*": [
+        "./src/Client/*"
+      ],
+      "@/Types/*": [
+        "./src/Types/*"
+      ],
+      "@/Commands/*": [
+        "./src/Commands/*"
+      ],
+      "@/Events/*": [
+        "./src/Events/*"
+      ],
+      "@/Structures/*": [
+        "./src/Structures/*"
+      ],
+      "@/Data/*": [
+        "./src/Data/*"
+      ],
+      "@/Utils/*": [
+        "./src/Utils/*"
+      ],
+    }
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+  ]
+}
