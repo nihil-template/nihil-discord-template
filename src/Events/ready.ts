@@ -1,4 +1,4 @@
-import { IEvent } from '@/Types';
+import { IEvent } from '../Types';
 
 export const event: IEvent = {
   name: 'ready',

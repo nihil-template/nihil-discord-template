@@ -1,5 +1,5 @@
 import { ClientEvents } from 'discord.js';
-import Client from '@/Client';
+import Client from '../Client';
 
 interface Run {
   // eslint-disable-next-line no-unused-vars

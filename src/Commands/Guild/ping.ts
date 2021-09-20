@@ -1,5 +1,5 @@
-import config from '@/Data/bot.config';
-import { ICommand } from '@/Types';
+import config from '../../Data/bot.config';
+import { ICommand } from '../../Types';
 
 export const command: ICommand = {
   name: '핑',

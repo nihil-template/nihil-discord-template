@@ -1,8 +1,8 @@
 import { Client, Collection } from 'discord.js';
 import path from 'path';
 import { readdirSync } from 'fs';
-import { ICommand, IConfig, IEvent } from '@/Types';
-import botConfig from '@/Data/bot.config';
+import { ICommand, IConfig, IEvent } from '../Types';
+import botConfig from '../Data/bot.config';
 
 interface ImportType {
   command?: ICommand;

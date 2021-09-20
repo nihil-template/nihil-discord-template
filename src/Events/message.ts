@@ -1,5 +1,5 @@
 import { Message } from 'discord.js';
-import { IEvent, ICommand } from '@/Types';
+import { IEvent, ICommand } from '../Types';
 
 export const event: IEvent = {
   name: 'messageCreate',
