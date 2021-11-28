@@ -18,7 +18,7 @@ module.exports = {
     ecmaVersion: 2021,
     sourceType: 'module',
   },
-  plugins: [ '@typescript-eslint', 'import', ],
+  plugins: [ '@typescript-eslint', 'import', 'html', ],
   rules: {
     // 일반 규칙
     'no-console': 'off',
@@ -80,6 +80,11 @@ module.exports = {
     '@typescript-eslint/no-var-requires': 'off',
     '@typescript-eslint/ban-ts-comment': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
-    '@typescript-eslint/indent': [ 'warn', 2, { SwitchCase: 1, }, ],
+    '@typescript-eslint/indent': [ 'warn', 2, {
+      SwitchCase: 1,
+      FunctionExpression: {
+        parameters: 0,
+      },
+    }, ],
   },
 };
