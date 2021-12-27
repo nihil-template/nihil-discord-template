@@ -64,6 +64,7 @@ module.exports = {
     'no-useless-constructor': 'off',
     'no-useless-return': 'off',
     'lines-between-class-members': 'off',
+    'arrow-body-style': 'off',
 
     // 임포트 규칙
     'import/extensions': 'off',
