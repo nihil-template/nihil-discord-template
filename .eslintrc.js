@@ -84,7 +84,7 @@ module.exports = {
     '@typescript-eslint/indent': [ 'warn', 2, {
       SwitchCase: 1,
       FunctionExpression: {
-        parameters: 0,
+        parameters: 1,
       },
     }, ],
   },

@@ -1,22 +1,29 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "lib": [
-      "es6"
-    ],
-    "target": "esnext",
-    "outDir": "build",
-    "rootDir": "src",
-    "allowJs": true,
+    "lib": ["ESNext", "DOM"],
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "target": "ESNext",
+    "outDir": "dist",
+    "sourceMap": false,
     "esModuleInterop": true,
-    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
+    "skipDefaultLibCheck": true,
+    "resolveJsonModule": true,
+    "importHelpers": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [ "src/*" ],
+      "@/structures/*": [ "src/structures/*" ],
+      "@/types/*": [ "src/types/*" ],
+      "@/commands/*": [ "src/commands/*" ],
+      "@/events/*": [ "src/events/*" ],
+      "@/utils/*": [ "src/utils/*" ],
+      "@/data/*": [ "src/data/*" ]
+    }
   },
-  "include": [
-    "src"
-  ],
-  "exclude": [
-    "node_modules",
-  ]
+  "include": [ "src", "enviroment.d.ts" ],
+  "exclude": [ "node_modules", "**/*.spec.ts" ]
 }
