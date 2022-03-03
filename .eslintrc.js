@@ -59,6 +59,7 @@ module.exports = {
     'prefer-const': 'off',
     'max-len': 'off',
     'no-else-return': 'off',
+    'no-lonely-if': 'off',
     'global-require': 'off',
     'class-methods-use-this': 'off',
     'no-useless-constructor': 'off',
@@ -86,6 +87,11 @@ module.exports = {
       FunctionExpression: {
         parameters: 1,
       },
+      ignoredNodes: [
+        'FunctionExpression > .params[decorators.length > 0]',
+        'FunctionExpression > .params > :matches(Decorator, :not(:first-child))',
+        'ClassBody.body > PropertyDefinition[decorators.length > 0] > .key',
+      ],
     }, ],
   },
 };
